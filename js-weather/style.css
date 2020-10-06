@@ -39,6 +39,8 @@ table {
     margin: 60px 8rem;
     width: 70%;
     height: 500px;
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 50px;
 }
 
 th {
