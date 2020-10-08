@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="天気予報" />
+    <title>天気予報</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather News</h1>
+    <form>
+        <select name="place" id="place">
+            <option value="London" selected>ロンドン</option>
+            <option value="Tokyo">東京</option>
+            <option value="Paris">パリ</option>
+            <option value="New York">ニューヨーク</option>
+            <option value="Indonesia">インドネシア</option>
+        </select>
+        の天気予報
+    </form>
+
+    <table>
+        <tr>
+            <th>天気</th>
+            <td id="description"></td>
+            <td><img id="weather_icon" alt="お天気アイコン"></td>
+        </tr>
+        <tr>
+            <th>気温</th>
+            <td id="temp"></td>
+        </tr>
+        <tr>
+            <th>気圧</th>
+            <td id="pressure"></td>
+        </tr>
+        <tr>
+            <th>湿度</th>
+            <td id="humidity"></td>
+        </tr>
+        <tr>
+            <th>風</th>
+            <td class="arrow"><img id="wind_icon" alt="風向き" /></td>
+            <td id="wind_speed"></td>
+        </tr>
+    </table>
+
+    <script src="weather.js"></script>
+</body>
+</html>
