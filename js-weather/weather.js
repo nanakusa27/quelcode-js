@@ -8,7 +8,7 @@ const weather = (place) => {
     document.getElementById('description')
     .textContent = data['weather'][0]['description'];
     document.getElementById('weather_icon')
-    .src = 'img/' + data['weather'][0]['icon'] + '.png';
+    .src = 'http://openweathermap.org/img/wn/' + data['weather'][0]['icon'] + '.png';
     document.getElementById('temp')
     .textContent = Math.round(data['main']['temp'] * 10)/ 10 + ' ℃';
     document.getElementById('pressure')
