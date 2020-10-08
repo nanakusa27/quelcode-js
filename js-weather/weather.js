@@ -16,7 +16,7 @@ function weather(place) {
     .then(data => {
       document.getElementById('description')
         .textContent = data['weather'][0]['description'];
-      document.getElementById('icon')
+      document.getElementById('weather_icon')
         .src = 'img/' + data['weather'][0]['icon'] + '.png';
       document.getElementById('temp')
         .textContent = Math.round(data['main']['temp'] * 10)/ 10 + ' ℃';
@@ -24,9 +24,9 @@ function weather(place) {
         .textContent = data['main']['pressure'] + ' hPa';
       document.getElementById('humidity')
         .textContent = data['main']['humidity'] + ' ％';
-      document.getElementById('wind')
+      document.getElementById('wind_icon')
         .src = 'img/wind1.png';
-      document.getElementById('wind')
+      document.getElementById('wind_icon')
         .style.transform = 'rotate(' + data['wind']['deg'] + 'deg)';
       document.getElementById('wind_speed')
         .textContent = data['wind']['speed'] + ' m/s';
