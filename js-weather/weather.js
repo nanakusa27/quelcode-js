@@ -14,7 +14,6 @@ function weather(place) {
   fetch(requestUrl)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
       document.getElementById('description')
         .textContent = data['weather'][0]['description'];
       document.getElementById('icon')
