@@ -28,6 +28,6 @@ const defaultPlace = document.getElementById('place');
 weather(defaultPlace);
 
 defaultPlace.addEventListener('change', () => {
-  const changePlace = document.getElementById('place');
-  weather(changePlace);
+  const selectPlace = document.getElementById('place');
+  weather(selectPlace);
 });
