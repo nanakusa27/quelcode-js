@@ -10,7 +10,6 @@ weather(place);
 function weather(place) {
   var appid = '4b5774e9f3d2a07b84f0f2f88e486224';
   var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + place.value + '&units=metric&lang=ja&APPID=' + appid;
-  var obj;
   fetch(requestUrl)
     .then(response => response.json())
     .then(data => {
